@@ -3,18 +3,21 @@ package com.android.learn.embed;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class QuizPage extends AppCompatActivity {
+public class QuizPage extends AppCompatActivity implements OnClickListener {
 
     private Button answer1, answer2, answer3, answer4;
     private TextView score, soal;
+    private ImageButton tombolHome,tombolBack;
     private QuizHelp mSoal = new QuizHelp();
 
     private String mJawaban;
@@ -29,7 +32,7 @@ public class QuizPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuis);
 
-
+        initializeComponent();
 
         answer1 = (Button) findViewById(R.id.answer1);
         answer2 = (Button) findViewById(R.id.answer2);
@@ -175,5 +178,31 @@ public class QuizPage extends AppCompatActivity {
         });
         AlertDialog alert = builder.create();
         alert.show();
+    }
+
+    private void initializeComponent() {
+
+        tombolHome = (ImageButton) findViewById(R.id.homeButtonQuiz);
+        tombolHome.setOnClickListener(this);
+
+        tombolBack = (ImageButton) findViewById(R.id.backButtonQuiz);
+        tombolBack.setOnClickListener(this);
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.homeButtonQuiz:
+                Intent l = new Intent(this, MainActivity.class);
+                startActivity(l);
+                finish();
+                break;
+            case R.id.backButtonQuiz:
+                Intent m = new Intent(this, MainActivity.class);
+                startActivity(m);
+                finish();
+                break;
+        }
     }
 }

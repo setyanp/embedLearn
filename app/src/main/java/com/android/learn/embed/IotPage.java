@@ -37,10 +37,12 @@ public class IotPage extends AppCompatActivity implements OnClickListener {
             case R.id.homeButtonIoT:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButtonIoT:
                 Intent m = new Intent(this, Materi.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }

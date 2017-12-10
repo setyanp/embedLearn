@@ -74,10 +74,12 @@ public class videoPage2 extends YouTubeBaseActivity implements YouTubePlayer.OnI
             case R.id.homeButtonVideo1:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButtonVideo1:
                 Intent m = new Intent(this, videoMain.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }

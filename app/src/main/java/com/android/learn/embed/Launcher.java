@@ -29,12 +29,10 @@ public class Launcher extends AppCompatActivity {
                 startActivity(i);
 
 
-                this.finish();
+                finish();
             }
 
-            private void finish() {
-
-            }
+            
         }, splashInterval);
     };
 }

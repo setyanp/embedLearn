@@ -44,22 +44,27 @@ public class videoMain extends AppCompatActivity implements OnClickListener {
             case R.id.iotVideo:
                 Intent i = new Intent(this, videoPage1.class);
                 startActivity(i);
+                finish();
                 break;
             case R.id.IPVideo:
                 Intent j = new Intent(this, videoPage2.class);
                 startActivity(j);
+                finish();
                 break;
             case R.id.RoboticVideo:
                 Intent k = new Intent(this, videoPage3.class);
                 startActivity(k);
+                finish();
                 break;
             case R.id.homeButtonVideo:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButtonVideo:
                 Intent m = new Intent(this, MainActivity.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }

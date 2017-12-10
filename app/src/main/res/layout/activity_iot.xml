@@ -6,9 +6,8 @@
     android:id="@+id/activity_iot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@drawable/iot"
-    tools:context="com.android.learn.embed.IotPage"
-    android:weightSum="1">
+    tools:background="@drawable/iot_resize"
+    tools:context="com.android.learn.embed.IotPage">
 
 
     <ScrollView
@@ -75,5 +74,4 @@
         android:scaleType="fitXY"
         android:layout_toEndOf="@+id/scrollView2"
         android:layout_toRightOf="@+id/scrollView2" />
-
 </RelativeLayout>

@@ -36,10 +36,12 @@ public class IpPage extends AppCompatActivity implements OnClickListener {
             case R.id.homeButtonIp:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButtonIp:
                 Intent m = new Intent(this, Materi.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }

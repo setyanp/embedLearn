@@ -36,10 +36,12 @@ public class RoboticPage extends AppCompatActivity implements OnClickListener {
             case R.id.homeButtonRobot:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButtonRobot:
                 Intent m = new Intent(this, Materi.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }

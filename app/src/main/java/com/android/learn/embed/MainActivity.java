@@ -37,14 +37,17 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.imageMateri:
                 Intent i = new Intent(this, Materi.class);
                 startActivity(i);
+
                 break;
             case R.id.imageQuiz:
                 Intent j = new Intent(this, QuizPage.class);
                 startActivity(j);
+
                 break;
             case R.id.imageVideo:
                 Intent k = new Intent(this, videoMain.class);
                 startActivity(k);
+
                 break;
         }
     }
@@ -58,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //if user pressed "yes", then he is allowed to exit from application
-                MainActivity.super.onBackPressed();
                 finish();
                 System.exit(0);
             }

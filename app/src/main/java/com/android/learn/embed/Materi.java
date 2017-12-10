@@ -42,22 +42,27 @@ public class Materi extends AppCompatActivity implements OnClickListener {
             case R.id.iotButton:
                 Intent i = new Intent(this, IotPage.class);
                 startActivity(i);
+                finish();
                 break;
             case R.id.ipButton:
                 Intent j = new Intent(this, IpPage.class);
                 startActivity(j);
+                finish();
                 break;
             case R.id.roboticButton:
                 Intent k = new Intent(this, RoboticPage.class);
                 startActivity(k);
+                finish();
                 break;
             case R.id.homeButton:
                 Intent l = new Intent(this, MainActivity.class);
                 startActivity(l);
+                finish();
                 break;
             case R.id.backButton:
                 Intent m = new Intent(this, MainActivity.class);
                 startActivity(m);
+                finish();
                 break;
         }
     }
