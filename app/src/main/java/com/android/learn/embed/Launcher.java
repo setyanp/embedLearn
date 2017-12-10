@@ -32,7 +32,7 @@ public class Launcher extends AppCompatActivity {
                 finish();
             }
 
-            
+
         }, splashInterval);
     };
 }
