@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_videopage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/video"
+    tools:context="com.android.learn.embed.RoboticPage"
+    >
+
+    <ImageButton
+
+        android:id="@+id/homeButtonVideo"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombolhome"
+        />
+
+    <ImageButton
+
+        android:id="@+id/backButtonVideo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="29dp"
+        android:background="@drawable/tombolback"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="45dp"
+        android:layout_below="@+id/backButtonVideo">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/iotVideo"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iotvideo"
+                    />
+
+                <TextView
+                    android:id="@+id/textVideoIoT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheap and Easy WiFi (IoT) Tutorial"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/iotVideo"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/IPVideo"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/raspberryvideo"
+                    />
+
+                <TextView
+                    android:id="@+id/textVideoIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raspberry Pi Tutorial 41: Control a DSLR with your Pi!"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/IPVideo"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/RoboticVideo"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robotvideo"
+                    />
+
+                <TextView
+                    android:id="@+id/textVideoRobotic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial Arduino : Line Follower Robot (Bahasa Indonesia)"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/RoboticVideo"
+                    />
+
+            </RelativeLayout>
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_materi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/materi"
+    tools:context="com.android.learn.embed.Materi"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/iotButton"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tomboliot"
+             />
+
+        <ImageButton
+            android:id="@+id/ipButton"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/tombolip"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            />
+
+        <ImageButton
+            android:id="@+id/roboticButton"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/tombolrobotic"
+             />
+    </LinearLayout>
+
+    <ImageButton
+
+        android:id="@+id/homeButton"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombolhome"
+        />
+
+    <ImageButton
+
+        android:id="@+id/backButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="29dp"
+        android:background="@drawable/tombolback"
+        />
+
+</RelativeLayout>

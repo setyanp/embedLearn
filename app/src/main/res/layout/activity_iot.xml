@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_iot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/iot"
+    tools:context="com.android.learn.embed.IotPage"
+    android:weightSum="1">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:id="@+id/scrollView2">
+    </ScrollView>
+
+
+    <ImageButton
+
+        android:id="@+id/homeButtonIoT"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombolhome"
+         />
+
+    <ImageButton
+
+        android:id="@+id/backButtonIoT"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="29dp"
+        android:background="@drawable/tombolback"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButtonIoT"
+        android:gravity="center_horizontal"
+        >
+
+    <TextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Mari Mengenal Apa itu Internet of Thing (IoT)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/imageViewIot"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/gambariot"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView2" />
+
+</RelativeLayout>
